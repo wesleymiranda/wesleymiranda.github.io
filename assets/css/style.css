@@ -1,0 +1,175 @@
+
+/*----------------------------------------------------------------
+Variáveis Globais
+------------------------------------------------------------------*/
+
+/* -- Fontes  -- */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+/* -- Cores -- */
+
+:root { 
+  --background-color: #ffffff;
+  --default-color: #272829; 
+  --heading-color: #050d18;
+  --accent-color: #149ddd;
+  --surface-color: #ffffff; 
+  --contrast-color: #ffffff;
+}
+
+/*-- Cores do Menu -- */
+:root {
+  --nav-color: #a8a9b4; 
+  --nav-hover-color: #ffffff; 
+  --nav-mobile-background-color: #040b14; 
+  --nav-dropdown-background-color: #040b14; 
+  --nav-dropdown-color: #a8a9b4;
+  --nav-dropdown-hover-color: #ffffff; }
+
+
+/*-- Variação Cores Fundo Escuro-- */
+
+.dark-background {
+  --background-color: #040b14;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
+}
+
+/*-- Variação Cores Fundo Claro -- */
+.light-background {
+  --background-color: #f4fafd;
+  --surface-color: #ffffff;
+}
+
+
+
+/*-------------------------------------------------------------------
+Estilos do Cabeçalho
+---------------------------------------------------------------------*/
+
+.header {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 300px; 
+    overflow-y: auto; 
+    padding: 1rem 2rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+
+.header .profile-img img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 5px solid color-mix(in srgb, var(--default-color), transparent 65%);
+
+}
+
+.header .logo {
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+
+.header .logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--heading-color);
+    text-align: center;
+    margin: 0;
+}
+
+.header .social-icons {
+    margin: 0 0 15px 0;
+}
+
+.header .social-icons a {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.header .social-icons .bi {
+    font-size: 25px;
+}
+
+@media (min-width: 1200px){
+    .header~main,
+    .header~footer {
+        margin-left: 300px; 
+        transition: all 0.3s ease-in-out; 
+    }
+}
+
+@media (max-width: 1199px) {
+    .header {
+        left: -100%; 
+        transition: all 0.3s ease-in-out; 
+    }
+
+}
+
+/*----------------------------------------------------------------------
+Menu de Navegação
+------------------------------------------------------------------------*/
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.navmenu {
+    padding: 0;
+    z-index: 9999;      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+
+}
+
+.navmenu ul {
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navmenu a {
+    color: var(--nav-color);
+    font-family: var(--nav-font);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    border-radius: 2%;
+    width: 100%;
+    height: 40px;
+    background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+    margin: 5px;
+}
+
+.navmenu i{
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: var(--nav-color);
+}
