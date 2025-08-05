@@ -1,7 +1,7 @@
 
 async function loadSection(sectionId, filePath) {
     try {
-        const response = await fetch(filePath);
+        const response = await fetch('../${filePath}');
         const html = await response.text();
         document.getElementById(sectionId).innerHTML = html;
     } catch (error) {
