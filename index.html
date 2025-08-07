@@ -32,7 +32,35 @@
 
 <body class="index-page">
 
-  <div id="header-container"></div>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Wesley Miranda</h1>
+    </a>
+
+    <div class="social-links text-center">
+        <a href="https://github.com/wesleymiranda" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.behance.net/wymiranda" class="behance"><i class="bi bi-behance"></i></a>
+        <a href="https://www.linkedin.com/in/wymiranda" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/5566997137958" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Início</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre Mim</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resumo</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portifólio</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+      </ul>
+    </nav>
+
+  </header>
 
   <main class="main">
 
@@ -263,7 +291,7 @@
         <p>Veja como transformo problemas complexos em sistemas funcionais.</p>
       </div><!-- End Section Title -->
 
-      <a href="portfolio-details.html" class="meu-botao">Ver Portifólio Completo Detalhado</a>
+
 
       <div class="container">
 
@@ -284,11 +312,11 @@
             
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-engenharia proj-simulacao-falha-maquinas-rotativas">
               <div class="portfolio-content h-100">
-                <img src="" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/eng-software-balanceamento/capa.jpg" class="img-fluid" alt=""> 
                 <div class="portfolio-info">
                   <h4> Software de Balanceamento Dinâmico em 2 Planos para Máquinas Rotativas (LabVIEW)</h4>
                   <p> Sistema completo de balanceamento dinâmico desenvolvido em LabVIEW, capaz de corrigir desbalanceamentos em máquinas rotativas através de medições em dois planos ortogonais. </p>
-                  <a href="https://youtube.com/shorts/Yx04ygzF7kQ" title="Projetei e construí um sistema completo para análise dinâmica de motores industriais, integrando sensores (acelerômetros e infravermelho) com aquisição de dados via placa e chassi da National Instruments." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.youtube.com/watch?v=mwxdNn5ataw" title="Projetei e construí um sistema completo para análise dinâmica de motores industriais, integrando sensores (acelerômetros e infravermelho) com aquisição de dados via placa e chassi da National Instruments." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html#balanceamento-dinamico" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -297,11 +325,11 @@
             
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-engenharia proj-simulacao-falha-maquinas-rotativas">
               <div class="portfolio-content h-100">
-                <img src="" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/eng-simulacao-falha/01-desbalanceamento.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4> "Análise de Espectro de Vibração em Máquinas Rotativas: Simulação de Falhas "</h4>
+                  <h4> Análise de Espectro de Vibração em Máquinas Rotativas: Simulação de Falhas</h4>
                   <p> Simulação de falhas em nosso sistema máquina rotativa e comparação dos resultados com a literatura. </p>
-                  <a href="https://youtube.com/shorts/Yx04ygzF7kQ" title="Projetei e construí um sistema completo para análise dinâmica de motores industriais, integrando sensores (acelerômetros e infravermelho) com aquisição de dados via placa e chassi da National Instruments." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/eng-simulacao-falha/01-desbalanceamento.png" title="Simulação de falhas no meu sistema construído e coleta de dados de vibrações" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html#simulacao-falha-maquinas-rotativas" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -309,11 +337,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dados filter-engenharia proj-estudo-eficiencia-producao">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/dados-eficiencia-producao/estudo-eficiencia-producao.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/dados-eficiencia-producao/01-estudo-eficiencia-producao.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Estudo de Eficiência de Tempo Produtivo de Fábrica</h4>
                   <p>Integrei dados do SIGAFRAN com Power BI para identificar perdas em tempo real, mapeando paradas não programadas e calculando OEE (Overall Equipment Effectiveness) e identificando desvios no tempo de produção maiores de 50% do tempo médio. O uso dese relatório resultou em aumentando a eficiência operacional em 22%.</p>
-                  <a href="assets/img/portfolio/dados-eficiencia-producao/estudo-eficiencia-producao.png" title="P" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/dados-eficiencia-producao/01-estudo-eficiencia-producao.png" title="P" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html#estudo-eficiencia-producao" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -321,11 +349,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-engenharia proj-construcao-bancada-vibracoes">
               <div class="portfolio-content h-100">
-                <img src="" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/eng-construcao-bancada-vibracoes/capa.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Construção de Bancada com Motor Industrial para Medição de Vibrações Mecânicas</h4>
                   <p> Sistema para análise de vibração de motores industriais, integrando sensores (acelerômetros e infravermelho) com aquisição de dados via placa e chassi National Instruments. </p>
-                  <a href="https://www.youtube.com/watch?v=Yx04ygzF7kQ" title="Projetei e construí um sistema completo para análise dinâmica de motores industriais, integrando sensores (acelerômetros e infravermelho) com aquisição de dados via placa e chassi da National Instruments." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <iframe width="300" height="500" src="https://www.youtube.com/embed/Yx04ygzF7kQ" frameborder="0"  allowfullscreen> </iframe>
                   <a href="portfolio-details.html#construcao-bancada-vibracoes" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -333,11 +361,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automacao proj-automacao-produtos-ecommerce">
               <div class="portfolio-content h-100">
-                <img src="" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Automação Python e Banco de Dados para Coletar Dados da WEB para uma loja de e-comerce </h4>
+                <img src="assets/img/portfolio/aut-ecommerce/Parte do Script.png" class="img-fluid" alt=""> <!--SUBSTITUIR POR VIDEO-->
+                <div class="portfolio-info"> 
+                  <h4> Automação Python e Banco de Dados para Coletar Dados da WEB para uma loja de e-comerce </h4>
                   <p>Desenvolvi um sistema em Python/Selenium que raspa dados (imagens, descrições e preços) de +1.000 produtos, processa as informações e atualiza automaticamente uma loja Shopify.</p>
-                  <a href="" title="Automação Dados Produtos" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/aut-ecommerce/Parte do Script.png" title="Automação Dados Produtos" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html#proj-automacao-produtos-ecommerce" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -346,7 +374,7 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-engenharia proj-esterilizador-ultravioleta">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio//eng-esterilizador/capa.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/eng-esterilizador/capa.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Construção de Esterilizador de Ar com Luz Ultra Violeta </h4>
                   <p> Responsável pela montagem estrutural, ligação elétrica (ventilador) e eletrônica (Arduino), garantindo o funcionamento seguro do sistema. </p>
@@ -356,38 +384,38 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automacao proj-automacao-cognos">
+            <!--  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automacao proj-automacao-cognos">
               <div class="portfolio-content h-100">
                 <img src="" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Solução Python para Download em Massa de Relatórios do IBM Cognos </h4>
                   <p>Desenvolvi um sistema em Python/Selenium que mapeou todos os IDs de relatórios no Cognos Analítico (IBM), contornando a limitação de downloads em massa.</p>
-                  <a href="" title="Automacao Cognos" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#construcao-bancada-vibracoes" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/aut-cognos/" title="Automacao Cognos" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#proj-automacao-cognos" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>End Portfolio Item -->
 
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automacao proj-automacao-cognos">
               <div class="portfolio-content h-100">
-                <img src="" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/dados-gestao-pcm-pcp/Volume Estoque vs Volume Produzido vs Volume Vendido.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Painel Integrado de Gestão de Manutenção e Produção em Power BI</h4>
                   <p>Dashboard estratégico que consolida indicadores-chave de performance industrial (OEE, MTBF, MTTR), dados financeiros de equipes e volumes de produção, com conexão direta ao SAP via ETL.</p>
-                  <a href="" title="Automacao Cognos" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html#construcao-bancada-vibracoes" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/dados-gestao-pcm-pcp/Volume Estoque vs Volume Produzido vs Volume Vendido.png" title="Gestão PCM/PCP" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html#cproj-gestao-pcm-pcp" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-visao-computacional proj-reconhecimento-expressoes">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/cv-reconhecimento-expressoes/face_landmarks.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/cv-reconhecimento-expressoes/capa.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Algoritmo de Reconhecimento de Expressões Faciais com DLib e OpenCV (C++)</h4>
                   <p>Sistema de classificação de expressões faciais que combina geometria facial (via DLib - splines polinomiais para contornos de olhos/boca) com features de aparência (HOG do OpenCV), alimentando uma rede neural artificial (ANN) com backpropagation.</p>
-                  <a href="assets/img/portfolio/cv-reconhecimento-expressoes/face_landmarks.png" title="Visao Computacional - Reconhecimento de Expressoes Faciais" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/cv-reconhecimento-expressoes/capa.png" title="Visao Computacional - Reconhecimento de Expressoes Faciais" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html#proj-reconhecimento-expressoes" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -395,11 +423,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-visao-computacional proj-visao-noturna">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio//cv-visao-noturna/capa.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/cv-visao-noturna/capa.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Algoritmo de Visão Noturna com Processamento de Imagens (C++/OpenCV)</h4>
                   <p>Desenvolvimento de um sistema de visão noturna através da manipulação dos canais de brilho (Y) e escuridão (YUV/HSV). </p>
-                  <a href="assets/img/portfolio//cv-visao-noturna/capa.png" title="Visao Computacional - Visao Noturna" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/cv-visao-noturna/capa.png" title="Visao Computacional - Visao Noturna" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html#proj-visao-noturna" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -407,11 +435,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-visao-computacional proj-deteccao-rodovias">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/cv-deteccao-rodovia/Detectando Rua.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/cv-deteccao-rodovia/capa.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Algoritmo de Detecção de Rodovias com Visão Computacional (C++/OpenCV)</h4>
                   <p>Desenvolvimento de um sistema de reconhecimento de vias utilizando Transformada de Hough OpenCV.</p>
-                  <a href="assets/img/portfolio/cv-deteccao-rodovia/Detectando Rua.png" title="Visao Computacional - Reconhecimento de Rodovias" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/cv-deteccao-rodovia/capa.png" title="Visao Computacional - Reconhecimento de Rodovias" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html#proj-deteccao-rodovias" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -421,7 +449,11 @@
         </div>
       </div>
 
-      <a href="portfolio-details.html" class="meu-botao">Ver Portifólio Completo Detalhado</a>
+      <div class="text-center my-4"> <!-- Div para centralizar e adicionar margem -->
+    <a href="portfolio-details.html" class="btn btn-outline-primary px-4 py-2 rounded">
+        Ver Portfólio Completo
+    </a>
+</div>
 
     </section><!-- /Portfolio Section -->
 

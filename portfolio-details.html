@@ -29,8 +29,35 @@
 </head>
 
 <body class="portfolio-details-page">
-  <div id="header-container"></div>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Wesley Miranda</h1>
+    </a>
+
+    <div class="social-links text-center">
+        <a href="https://github.com/wesleymiranda" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.behance.net/wymiranda" class="behance"><i class="bi bi-behance"></i></a>
+        <a href="https://www.linkedin.com/in/wymiranda" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/5566997137958" class="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Início</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre Mim</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resumo</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portifólio</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+      </ul>
+    </nav>
+
+  </header>
   <main class="main">
 
     <!-- Page Title -->
@@ -56,6 +83,8 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
+              <h2>Sistema de Balanceamento Dinâmico em LabVIEW</h2>
+
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
@@ -75,19 +104,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="Operação Normal">
+                  <img src="assets/img/portfolio/eng-software-balanceamento/01-interface.png" alt="Operação Normal">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Simulação de Desbalanceamento">
+                  <img src="assets/img/portfolio/eng-software-balanceamento/02-medicoes-vibracao.png" alt="Simulação com massas de teste.">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Simulação de Desalinhamento Paralelo">
+                  <img src="assets/img/portfolio/eng-software-balanceamento/03-comparativo-inicial-final.png" alt="Comparativo: Estado inicial vs Final">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="Simulação de Desalinhamento Angular">
+                  <img src="assets/img/portfolio/eng-software-balanceamento/04-diagrama-balanceamento-e-resultados-de-calculos.png" alt="Resultado dos cálculos">
                 </div>
 
               </div>
@@ -104,14 +133,13 @@
                 <li><strong>Data do projeto</strong>: Agosto, 2025</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Sistema completo de balanceamento dinâmico desenvolvido em LabVIEW, capaz de corrigir desbalanceamentos em máquinas rotativas através de medições em dois planos ortogonais.</h2>
-                <h3>Funcionamento:</h3>
-              <p>Aquisição de sinais de vibração via acelerômetros e sensores de fase</p>
-              <p>Cálculo automático de massas corretivas e posicionamento angular</p>
-              <p>Interface gráfica intuitiva com visualização em tempo real dos espectros de vibração</p>
-              <p>Resultados: Redução de até 85% nos níveis de vibração pós-balanceamento (norma ISO 1940-1).</p>
+
+              <h3>Descrição:</h3>
+              <p>Sistema completo de balanceamento dinâmico desenvolvido em LabVIEW, capaz de corrigir desbalanceamentos em máquinas rotativas através de medições em dois planos ortogonais.</p>
+              <p>Aquisição de sinais de vibração via acelerômetros e sensores de fase.</p>
+              <p>Cálculo automático de massas corretivas e posicionamento angular.</p>
+              <p>Interface gráfica intuitiva com visualização em tempo real dos espectros de vibração.</p>
+              <p>Resultados: Redução de até 82% nos níveis de vibração pós-balanceamento (norma ISO 1940-1).</p>
             </div>
           </div>
         </div>
@@ -128,6 +156,8 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
+              <h2>Análise de Espectro de Vibração em Máquinas Rotativas: Simulação de Falhas</h2>
+
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
@@ -147,19 +177,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="Operação Normal">
+                  <img src="assets/img/portfolio/eng-simulacao-falha/00-operacao-normal.png" alt="Operação Normal">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Simulação de Desbalanceamento">
+                  <img src="assets/img/portfolio/eng-simulacao-falha/01-desbalanceamento.png" alt="Simulação de Desbalanceamento">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Simulação de Desalinhamento Paralelo">
+                  <img src="assets/img/portfolio/eng-simulacao-falha/02-desalinhamento-paralelo.png" alt="Simulação de Desalinhamento Paralelo">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="Simulação de Desalinhamento Angular">
+                  <img src="assets/img/portfolio/eng-simulacao-falha/03-desalinhamento-angular.png" alt="Simulação de Desalinhamento Angular">
                 </div>
 
               </div>
@@ -176,12 +206,11 @@
                 <li><strong>Data do projeto</strong>: Maio, 2025</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2></h2>
-                <p>Desenvolvimento de um estudo experimental para simular falhas comuns em máquinas rotativas (desbalanceamento, desalinhamento paralelo, desalinhamento angular), coletando dados de vibração via acelerômetros.</p>
-                <p>Análise comparativa dos espectros de frequência com benchmarks da literatura técnica, validando padrões de falha e criando um catálogo de referência para diagnósticos rápidos.</p>
-                <p>Processamento dos sinais em LabVIEW e geração de graficos para análise.</p>
+
+              <h3>Descrição:</h3>
+              <p>Desenvolvimento de um estudo experimental para simular falhas comuns em máquinas rotativas (desbalanceamento, desalinhamento paralelo, desalinhamento angular), coletando dados de vibração via acelerômetros.</p>
+              <p>Análise comparativa dos espectros de frequência com benchmarks da literatura técnica, validando padrões de falha e criando um catálogo de referência para diagnósticos rápidos.</p>
+              <p>Processamento dos sinais em LabVIEW e geração de graficos para análise.</p>
             </div>
           </div>
         </div>
@@ -196,6 +225,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
+
+              <h2>Estudo de Eficiência de Tempo Produtivo de Fábrica</h2>
 
               <script type="application/json" class="swiper-config">
                 {
@@ -216,15 +247,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="Painel PBI">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Foto Fábrica">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Parte relatório estudo eficiencia">
+                  <img src="assets/img/portfolio/dados-eficiencia-producao/01-estudo-eficiencia-producao.png" alt="Painel PBI">
                 </div>
 
               </div>
@@ -241,11 +264,10 @@
                 <li><strong>Data do projeto</strong>: Março, 2025</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2></h2>
-                <p>Integração de dados operacionais do SIGAFRAN em tempo real com Power BI para monitoramento contínuo de eficiência (OEE), identificando paradas críticas e desvios superiores a 50% do tempo padrão.</p>
-                <p>Resultado: Aumento de 22% na eficiência operacional após implementação.</p>
+
+              <p>Desenvolvimento de um estudo de eficiência operacional para uma fábrica, analisando dados de produção e identificando gargalos e ineficiências.</p>
+              <p>Integração de dados operacionais do SIGAFRAN em tempo real com Power BI para monitoramento contínuo de eficiência (OEE), identificando paradas críticas e desvios superiores a 50% do tempo padrão.</p>
+              <p>Resultado: Aumento de 22% na eficiência operacional após implementação.</p>
             </div>
           </div>
         </div>
@@ -262,6 +284,8 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
+              <h2>Construção de Bancada com Motor Industrial para Medição de Vibrações Mecânicas</h2>
+
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
@@ -281,30 +305,24 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <a href="https://youtube.com/shorts/Yx04ygzF7kQ" title="Sistema em funcionamento." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  
+                  <iframe 
+                  width="300" 
+                  height="500" 
+                  src="https://www.youtube.com/embed/Yx04ygzF7kQ" 
+                  frameborder="0" 
+                  allowfullscreen>
+                  </iframe>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="Desenho 3D">
+                  <img src="assets/img/portfolio/eng-construcao-bancada-vibracoes/capa.png" alt="Desenho 3D">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Seleção e fabricação de Componentes">
+                  <img src="assets/img/portfolio/eng-construcao-bancada-vibracoes/bancada-construida.png" alt="Seleção e fabricação de Componentes">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Montagem">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="Interface programa LabVIEW">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Partes do diagrama de blocos do programa LabVIEW: Aquisição de Velocidade">
-                </div>
-
+              
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -319,15 +337,17 @@
                 <li><strong>Data do projeto</strong>: Janeiro, 2025</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
+
+              <h3>Descrição:</h3>
+
+              <p>Projetei e construí um sistema completo para análise dinâmica de motores industriais, integrando sensores (acelerômetros e infravermelho) com aquisição de dados via placa NI. </p>
+              <h4> Desenvolvimento Customizado: </h4>
+              <P>Desde a modelagem 3D e seleção de componentes até a criação de peças não comerciais, garantindo precisão nas medições de desbalanceamento. </P>
+              <h4>Software em LabVIEW: </h4>  
+              <p>Desenvolvi uma interface em LabVIEW que coleta dados em tempo real, faz medições de Velocidade, processa FFT, média síncrona e cálculo de balancemento dinâmico.</p>
+            
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Construção de Bancada com Motor Industrial para Medição de Vibrações Mecânicas e Software em LabVIEW</h2>
-                  <p>Projetei e construí um sistema completo para análise dinâmica de motores industriais, integrando sensores (acelerômetros e infravermelho) com aquisição de dados via placa NI. </p>
-              <h3> Desenvolvimento Customizado: </h3>
-                  <P>>Desde a modelagem 3D e seleção de componentes até a criação de peças não comerciais, garantindo precisão nas medições de desbalanceamento. </P>
-              <h3>Software em LabVIEW: </h3>  
-                  <p>Desenvolvi uma interface em LabVIEW que coleta dados em tempo real, faz medições de Velocidade, processa FFT, média síncrona e cálculo de balancemento dinâmico.</p>
-            </div>
+
           </div>
         </div>
       </div>
@@ -343,6 +363,8 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
+              <h2>Automação e Banco de Dados para Coletar Dados da WEB para uma loja de e-comerce</h2>
+
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
@@ -361,17 +383,17 @@
 
               <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <a href="https://youtube.com/shorts/Yx04ygzF7kQ" title="Sistema em funcionamento." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <!--<div class="swiper-slide">
+                  <a href="" title="Sistema em funcionamento." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   
+                </div>-->
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/aut-ecommerce/Parte do Script.png" alt="Banco de Dados">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="Banco de Dados">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Parte do Código Python">
+                  <img src="assets/img/portfolio/aut-ecommerce/Banco de Dados.png" alt="Parte do Código Python">
                 </div>
 
               </div>
@@ -388,13 +410,12 @@
                 <li><strong>Data do projeto</strong>: Junho, 2024</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-            <h2>Automação e Banco de Dados para Coletar Dados da WEB para uma loja de e-comerce (2024)</h2>
-                <p>Desenvolvi um sistema em Python/Selenium que raspa dados (imagens, descrições e preços) de +1.000 produtos, processa as informações e atualiza automaticamente uma loja Shopify.</p>
-              <h5>Pipeline Completo de Dados:</h3>
+              <h3>Descrição:</h3>
+
+              <p>Desenvolvi um sistema em Python/Selenium que raspa dados (imagens, descrições e preços) de +1.000 produtos, processa as informações e atualiza automaticamente uma loja Shopify.</p>
+              <h4>Pipeline Completo de Dados:</h4>
               <p>As imagens são redimensionadas e armazenadas no Google Drive, enquanto os metadados são organizados em um banco SQLite3 — tudo executado via automação.</p>
-              <h5>Eficiência em Escala:</h3>
+              <h4>Eficiência em Escala:</h4>
               <p>Processamento de +20.000 imagens e integração contínua com a Shopify, reduzindo horas manuais de atualização de catálogo.</p>
             </div>
           </div>
@@ -411,6 +432,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
+
+              <h2>Construção de Esterilizador de Ar com Luz Ultra Violeta </h2>
 
               <script type="application/json" class="swiper-config">
                 {
@@ -468,10 +491,9 @@
                 <li><strong>Data do projeto</strong>: Maio, 2023</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Construção de Esterilizador de Ar com Luz Ultra Violeta </h2>
-                  <p> Responsável pela montagem estrutural, ligação elétrica (ventilador) e eletrônica (Arduino), garantindo o funcionamento seguro do sistema. </p>
+              <h3>Descrição:</h3>
+
+              <p> Responsável pela montagem estrutural, ligação elétrica (ventilador) e eletrônica (Arduino), garantindo o funcionamento seguro do sistema. </p>
             </div>
           </div>
         </div>
@@ -479,7 +501,7 @@
     </section><!-- /Portfolio Details Section -->
 
     <!-- Portfolio Details Section -->
-    <section id="proj-automacao-cognos" class="portfolio-details section">
+    <!--<section id="proj-automacao-cognos" class="portfolio-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -487,6 +509,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
+
+              <h2>Solução Python para Download em Massa de Relatórios do IBM Cognos</h2>
 
               <script type="application/json" class="swiper-config">
                 {
@@ -527,17 +551,16 @@
                 <li><strong>Categoria</strong>: Automação</li>
                 <li><strong>Cliente</strong>: Um banco</li>
                 <li><strong>Data do projeto</strong>: Jan, 2023</li>
-                <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
+               
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Solução Python para Download em Massa de Relatórios do IBM Cognos</h2>
-                  <p>Desenvolvi um sistema em Python/Selenium que mapeou todos os IDs de relatórios no Cognos Analítico (IBM), contornando a limitação de downloads em massa.</p>
+              <h3>Descrição:</h3>
+
+              <p>Desenvolvi um sistema em Python/Selenium que mapeou todos os IDs de relatórios no Cognos Analítico (IBM), contornando a limitação de downloads em massa.</p>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Portfolio Details Section -->
+    </section> /Portfolio Details Section -->
 
     <!-- Portfolio Details Section -->
     <section id="proj-gestao-pcm-pcp" class="portfolio-details section">
@@ -548,6 +571,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
+
+              <h2>Painel Integrado de Gestão de Manutenção e Produção em Power BI</h2>
 
               <script type="application/json" class="swiper-config">
                 {
@@ -569,11 +594,11 @@
 
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="Parte do Código">
+                  <img src="assets/img/portfolio/dados-gestao-pcm-pcp/Volume Estoque vs Volume Produzido vs Volume Vendido.png" alt="Dados reais da empresa foram alterados">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="Parte do Banco de Dados">
+                  <img src="assets/img/portfolio/dados-gestao-pcm-pcp/Controle de Pedidos vs Produção.png" alt="Dados">
                 </div>
 
               </div>
@@ -590,13 +615,17 @@
                 <li><strong>Data do projeto</strong>: Out, 2022</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
+              <h3>Descrição:</h3>
+
+              <p>Desenvolvi um painel integrado de gestão de manutenção e produção em Power BI, unindo dados do SAP e SQL Server para otimizar a tomada de decisões.</p>
+              <h4>Arquitetura:</h4>
+              <p>Extração de dados do SAP + integração com SQL Server</p>
+              <p>Transformação com Power Query (limpeza de dados de paradas e custos)</p>
+              <p>Visualizações interativas com drill-down por linha, turno e equipamento</p>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Painel Integrado de Gestão de Manutenção e Produção em Power BI</h2>
-                  <p>Arquitetura:</p>
-                  <p>Extração de dados do SAP + integração com SQL Server</p>
-                  <p>Transformação com Power Query (limpeza de dados de paradas e custos)</p>
-                  <p>Visualizações interativas com drill-down por linha, turno e equipamento</p>
+              
+
             </div>
           </div>
         </div>
@@ -611,6 +640,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
+
+              <h2>Algoritmo de Reconhecimento de Expressões Faciais com DLib e OpenCV (C++)</h2>
 
               <script type="application/json" class="swiper-config">
                 {
@@ -650,17 +681,16 @@
                 <li><strong>Data do projeto</strong>: Nov, 2021</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
+              <h3>Descrição:</h3>
+
+              <p> Sistema de classificação de expressões faciais que combina geometria facial (via DLib - splines polinomiais para contornos de olhos/boca) com features de aparência (HOG do OpenCV), alimentando uma rede neural artificial (ANN) com backpropagation.</p>
+              <h4>Pipeline completo:</h4>
+              <ul>
+                <li>Extração de 68 landmarks faciais (DLib) + coeficientes de splines</li>
+                <li>Cálculo de descritores HOG (OpenCV) para textura facial</li>
+                <li>Fusão dos features em uma ANN de 3 camadas (accuracy: 92% no CK+ Dataset)</li>
+              </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Algoritmo de Reconhecimento de Expressões Faciais com DLib e OpenCV (C++)</h2>
-                  <p> Sistema de classificação de expressões faciais que combina geometria facial (via DLib - splines polinomiais para contornos de olhos/boca) com features de aparência (HOG do OpenCV), alimentando uma rede neural artificial (ANN) com backpropagation.</p>
-                  <h3>Pipeline completo:</h3>
-                  <ul>
-                    <li>Extração de 68 landmarks faciais (DLib) + coeficientes de splines</li>
-                    <li>Cálculo de descritores HOG (OpenCV) para textura facial</li>
-                    <li>Fusão dos features em uma ANN de 3 camadas (accuracy: 92% no CK+ Dataset)</li>
-                  </ul>
-                </div>
           </div>
         </div>
       </div>
@@ -674,6 +704,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
+
+              <h2>Algoritmo de Visão Noturna com Processamento de Imagens (C++/OpenCV)</h2>
 
               <script type="application/json" class="swiper-config">
                 {
@@ -725,24 +757,22 @@
                 <li><strong>Data do projeto</strong>: Maio, 2021</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Algoritmo de Visão Noturna com Processamento de Imagens (C++/OpenCV)</h2>
-                
+              <h3>Descrição:</h3>
+
               <p>Desenvolvimento de um sistema de visão noturna através da manipulação dos canais de brilho (Y) e escuridão (YUV/HSV) em imagens de baixa luminosidade, utilizando OpenCV em C++. </p>
-                   <br>
-                    <h5>Técnicas aplicadas:</h5>
-                  <br>
-
-                  <ul>
-                    <li>Equalização adaptativa de histograma (CLAHE)</li>
-                    <li>Filtros de redução de ruído (Gaussian Blur + Bilateral Filter)</li>
-                    <li>Realce de bordas via operadores morfológicos</li>
-                  </ul>
-
-                  <p>Resultado: Melhoria na taxa de detecção de objetos em cenários noturnos comparado a imagem original.</p>
+              
+              <h4>Técnicas aplicadas:</h4>
             
+              <ul>
+                <li>Equalização adaptativa de histograma (CLAHE)</li>
+                <li>Filtros de redução de ruído (Gaussian Blur + Bilateral Filter)</li>
+                <li>Realce de bordas via operadores morfológicos</li>
+              </ul>
+
+              <p>Resultado: Melhoria na taxa de detecção de objetos em cenários noturnos comparado a imagem original.</p>
+
             </div>
+
           </div>
         </div>
       </div>
@@ -756,6 +786,8 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
+
+              <h2>Algoritmo de Detecção de Rodovias com Visão Computacional (C++/OpenCV)</h2>
 
               <script type="application/json" class="swiper-config">
                 {
@@ -805,14 +837,10 @@
                 <li><strong>Data do projeto</strong>: Outubro, 2019</li>
                 <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
 
-              <h2>Algoritmo de Detecção de Rodovias com Visão Computacional (C++/OpenCV)</h2>
-                  <p>Desenvolvimento de um sistema de reconhecimento de vias utilizando OpenCV em C++, implementando transformada de Hough para identificação rodovias.</p>
-                  <p>Processamento em tempo real de fluxos de vídeo, com filtros morfológicos e ajuste dinâmico de parâmetros para diferentes condições de iluminação e pavimento.</p>
-                  <p>Precisão: 94% de acerto na detecção contínua em testes de identificação.</p>
-            
+              <p>Desenvolvimento de um sistema de reconhecimento de vias utilizando OpenCV em C++, implementando transformada de Hough para identificação rodovias.</p>
+              <p>Processamento em tempo real de fluxos de vídeo, com filtros morfológicos e ajuste dinâmico de parâmetros para diferentes condições de iluminação e pavimento.</p>
+              <p>Precisão: 94% de acerto na detecção contínua em testes de identificação.</p>
             </div>
           </div>
         </div>

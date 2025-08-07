@@ -21,7 +21,7 @@ if (headerToggleBtn) { // ← Adicione esta verificação
 
   /**
    * Hide mobile nav on same-page/hash links
-   
+  */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.header-show')) {
@@ -29,7 +29,7 @@ if (headerToggleBtn) { // ← Adicione esta verificação
       }
     });
 
-  });*/
+  });
 
   /**
    * Toggle mobile nav dropdowns
