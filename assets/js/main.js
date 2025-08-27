@@ -225,3 +225,34 @@ if (headerToggleBtn) { // ← Adicione esta verificação
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+window.addEventListener('scroll', () => {
+  const container = document.querySelector('.scroll-section');
+  const firstImage = document.querySelector('.image-first');
+  const secondImage = document.querySelector('.image-second');
+  const imageContainer = document.querySelector('.image-transition-container');
+  
+  const scrollY = window.scrollY;
+  const containerTop = container.offsetTop;
+  const containerHeight = container.offsetHeight;
+  const viewportHeight = window.innerHeight;
+  
+  // Calcula quando o container entra e sai da viewport
+  const containerBottom = containerTop + containerHeight;
+  const scrollStart = containerTop - viewportHeight + imageContainer.offsetHeight;
+  const scrollEnd = containerBottom - viewportHeight;
+  
+  // Progresso do scroll (0 a 1) apenas durante a passagem do container
+  let scrollProgress = 0;
+  if (scrollY > scrollStart && scrollY < scrollEnd) {
+    scrollProgress = (scrollY - scrollStart) / (scrollEnd - scrollStart);
+  } else if (scrollY >= scrollEnd) {
+    scrollProgress = 1;
+  }
+  
+  scrollProgress = Math.min(Math.max(scrollProgress, 0), 1);
+  
+  // Aplica o efeito
+  firstImage.style.clipPath = `inset(${scrollProgress * 100}% 0 0 0)`;
+  secondImage.style.clipPath = `inset(${100 - scrollProgress * 100}% 0 0 0)`;
+});
